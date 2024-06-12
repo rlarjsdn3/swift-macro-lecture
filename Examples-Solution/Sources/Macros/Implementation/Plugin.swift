@@ -11,6 +11,8 @@ import SwiftSyntaxMacros
 @main
 struct MacroPlugin: CompilerPlugin {
     var providingMacros: [Macro.Type] = [
-        
+        DictionaryStorageMacro.self,
+        DiscardableResultMacro.self,
+        URLMacro.self
     ]
 }
